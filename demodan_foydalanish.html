@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demodan qanday foydalanish</title>
+<style>
+  :root{
+    --bg:#080c14;
+    --panel:#0d1828;
+    --border:#1e3048;
+    --teal:#00f0c8;
+    --amber:#fbbf24;
+    --text:#e2e8f0;
+    --muted:#8ba0c0;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:28px 16px 70px;
+    line-height:1.7;
+  }
+  .wrap{max-width:560px;margin:0 auto;}
+  header{text-align:center;margin-bottom:28px;}
+  header h1{
+    font-size:1.35rem;
+    margin:0 0 8px;
+    color:var(--teal);
+  }
+  header p{color:var(--muted);font-size:.85rem;margin:0;}
+
+  .step{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-left:3px solid var(--teal);
+    border-radius:10px;
+    padding:16px 18px;
+    margin-bottom:14px;
+  }
+  .step-num{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:26px;height:26px;
+    background:var(--teal);
+    color:#04121a;
+    border-radius:50%;
+    font-weight:700;
+    font-size:.85rem;
+    margin-right:8px;
+  }
+  .step h2{
+    font-size:1rem;
+    margin:0 0 8px;
+    display:flex;
+    align-items:center;
+  }
+  .step p{
+    margin:0 0 6px;
+    font-size:.88rem;
+    color:#c7d2e0;
+  }
+  .step p:last-child{margin-bottom:0;}
+
+  .btn-explain{
+    background:#080c14;
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:10px 12px;
+    margin:10px 0;
+    font-size:.82rem;
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+  }
+  .btn-icon{
+    font-size:1.1rem;
+    flex-shrink:0;
+  }
+  .btn-text b{color:var(--amber);}
+
+  .tip{
+    background:rgba(0,240,200,.06);
+    border:1px dashed var(--teal);
+    border-radius:8px;
+    padding:10px 14px;
+    font-size:.8rem;
+    color:var(--teal);
+    margin-top:10px;
+  }
+
+  .divider{
+    text-align:center;
+    color:var(--muted);
+    font-size:.72rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    margin:28px 0 14px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📖 Demodan qanday foydalanish</h1>
+    <p>Bu sahifa sizga har bir tugma nimani anglatishini, darsni qanday o'tishni oddiy tilda tushuntiradi.</p>
+  </header>
+
+  <div class="step">
+    <h2><span class="step-num">1</span> Mavzuni oching</h2>
+    <p>Sahifa ochilganda tepada mavzular ro'yxati (masalan "3.1", "3.2"...) chiqadi. Birinchi mavzuni bosing — u ochiladi.</p>
+  </div>
+
+  <div class="step">
+    <h2><span class="step-num">2</span> Avval nazariyani o'qing</h2>
+    <p>Har bir mavzuda avval qisqa tushuntirish (nazariya) beriladi — bu yerda mavzu nima haqida ekani yoziladi. Buni diqqat bilan o'qing, keyin mashqqa o'ting.</p>
+  </div>
+
+  <div class="step">
+    <h2><span class="step-num">3</span> Mashqni (eskizni) yozing</h2>
+    <p>Har bir mavzuda 2-3 ta amaliy mashq (eskiz) bor. Har birida sizga bir vazifa beriladi va siz kodni <b>qator-qator, o'zingiz yozib chiqasiz</b> — xuddi darslikdagi bo'sh joyni to'ldirganday.</p>
+    <p>Har bir qatorni yozib bo'lgach, u to'g'ri yozilganini tekshiradi. To'g'ri bo'lsa — yashil rangga aylanadi va keyingi qatorga o'tasiz.</p>
+  </div>
+
+  <div class="divider">Tugmalar nimani anglatadi</div>
+
+  <div class="step">
+    <h2>🎛️ Asosiy tugmalar</h2>
+    <div class="btn-explain">
+      <span class="btn-icon">📖</span>
+      <span class="btn-text"><b>Batafsil</b> — mavzu haqida to'liqroq tushuntirishni ochadi/yopadi. Agar nazariya tushunarsiz bo'lsa, shu tugmani bosing.</span>
+    </div>
+    <div class="btn-explain">
+      <span class="btn-icon">📊</span>
+      <span class="btn-text"><b>Natija</b> — to'liq yechilgan, tayyor namunani ko'rsatadi. Agar o'zingiz yoza olmay qolsangiz, shu yerdan qanday yozilishini ko'rib, keyin qaytadan urinib ko'ring.</span>
+    </div>
+    <div class="btn-explain">
+      <span class="btn-icon">👁️</span>
+      <span class="btn-text"><b>Ko'rsat / Yashir</b> — qatorning "soya" (taxminiy) ko'rinishini ko'rsatadi, sizga yordam beradi. Qiynalsangiz yoqing.</span>
+    </div>
+    <div class="btn-explain">
+      <span class="btn-icon">⏭️</span>
+      <span class="btn-text"><b>Kommentlarni o'tkazib yuborish</b> — <code>#</code> belgisi bilan boshlanadigan izoh qatorlarini yozmasdan o'tkazib yuborish imkonini beradi. Faqat asosiy kod qatorlarini yozmoqchi bo'lsangiz yoqing.</span>
+    </div>
+    <div class="tip">💡 Qiynalsangiz — avval "👁️ Ko'rsat"ni yoqing, hali ham qiyin bo'lsa "📊 Natija"ni ochib, tayyor javobni ko'ring va qo'lda qayta yozib chiqing. Bu — eng yaxshi o'rganish usuli!</div>
+  </div>
+
+  <div class="divider">Keyingi mashqqa qanday o'tiladi</div>
+
+  <div class="step">
+    <h2><span class="step-num">4</span> Nuqtachalar (● ● ●)</h2>
+    <p>Har bir mavzuda bir nechta mashq (eskiz) bo'ladi. Ularning ustida kichik nuqtachalar (masalan ● ● ●) ko'rinadi — har bir nuqta bitta mashqni bildiradi.</p>
+    <p>Birinchi mashqni tugatgach, ikkinchi nuqtachani bosing — ikkinchi mashq ochiladi. Shu tariqa barcha mashqlarni birma-bir bajarasiz.</p>
+  </div>
+
+  <div class="step">
+    <h2><span class="step-num">5</span> Keyingi mavzuga o'ting</h2>
+    <p>Mavzudagi barcha mashqlarni tugatgach, tepadagi mavzular ro'yxatidan keyingisini (masalan "3.1" dan keyin "3.2") bosing. Shu tariqa, mavzudan-mavzuga o'tib, kursni davom ettirasiz.</p>
+  </div>
+
+  <div class="tip" style="margin-top:20px;">
+    ❓ Savolingiz bo'lsa — kanal orqali yozing, yordam beramiz.
+  </div>
+</div>
+</body>
+</html>
